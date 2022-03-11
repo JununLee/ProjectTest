@@ -1,0 +1,19 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture3D<float4> Result;
+
+sampler3D _volume;
+float _nx;
+float _ny;
+float _nz;
+vector _scale;
+[numthreads(8,8,4)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float4 pos = float4(id.x / _nx, id.y / _ny, id.z / _nz, 1);
+    float4 data = tex3Dlod(_volume, float4(pos.xyz, 0));
+    Result[id.xyz] = float4(1,0,0,1);
+}

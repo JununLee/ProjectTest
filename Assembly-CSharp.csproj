@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{EDCE63F9-C566-F2C9-0A67-F4F110CD1D26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\2DFloodFill\floodFilltest.cs" />
+     <Compile Include="Assets\3DBrush\Brush.cs" />
+     <Compile Include="Assets\AdjustK\AdjustKComp.cs" />
+     <Compile Include="Assets\ConstruMesh\ConstructMesh.cs" />
+     <Compile Include="Assets\DcmReader\dcmReader.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL10.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL11.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Cloo\Bindings\CL12.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\ComputeIncludeParser.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\FluvioRuntimeHelper.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\Internal\Threading\FluvioThreadPool.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\SamplePlugins\FluidMixer.cs" />
+     <Compile Include="Assets\Fluvio\_Main\PlatformSource\Thinksquirrel\Fluvio\SamplePlugins\FluidTouch.cs" />
+     <Compile Include="Assets\GL\DrawLineDemo.cs" />
+     <Compile Include="Assets\Json\JsonRead.cs" />
+     <Compile Include="Assets\MarchingCube\MarchingCubes.cs" />
+     <Compile Include="Assets\MaterialSetBuffer\materialSetBuffer.cs" />
+     <Compile Include="Assets\MeshErasure\MeshErasure.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiFluidRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiParticleRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ShadowmapExposer.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\Blinker.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\BucketController.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ColliderHighlighter.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CollisionEventHandler.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\FirstPersonLauncher.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\FluidJetController.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObiActorTeleport.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObjectDragger.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObjectLimit.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\SlowmoToggler.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ThirdPersonUserControl.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\WaveGenerator.cs" />
+     <Compile Include="Assets\Obi\Scripts\Actors\ObiActor.cs" />
+     <Compile Include="Assets\Obi\Scripts\Actors\ObiBone.cs" />
+     <Compile Include="Assets\Obi\Scripts\Actors\ObiEmitter.cs" />
+     <Compile Include="Assets\Obi\Scripts\Actors\ObiStitcher.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiBoxShapeTracker2D.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiCapsuleShapeTracker2D.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiCircleShapeTracker2D.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiEdgeShapeTracker2D.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiBoxShapeTracker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiCapsuleShapeTracker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiMeshShapeTracker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiShapeTracker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiSphereShapeTracker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiTerrainShapeTracker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ObiCollider.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ObiCollider2D.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ObiColliderBase.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ObiCollisionMaterial.cs" />
+     <Compile Include="Assets\Obi\Scripts\Collisions\ObiRigidbody.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiAerodynamicConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiBendConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiDistanceConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiPinConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiSkinConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiTetherConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ConstraintBatches\ObiVolumeConstraintBatch.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiAerodynamicConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiBatchedConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiBendingConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiDistanceConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiPinConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiSkinConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiTetherConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Constraints\ObiVolumeConstraints.cs" />
+     <Compile Include="Assets\Obi\Scripts\Coroutines\CoroutineJob.cs" />
+     <Compile Include="Assets\Obi\Scripts\Coroutines\EditorCoroutine.cs" />
+     <Compile Include="Assets\Obi\Scripts\DataStructures\ObiParticleCache.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterMaterial.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterMaterialFluid.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterMaterialGranular.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShape.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShapeCube.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShapeDisk.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShapeEdge.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShapeImage.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShapeSphere.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ObiEmitterShapeSquare.cs" />
+     <Compile Include="Assets\Obi\Scripts\Emitter\ParticleAdvector.cs" />
+     <Compile Include="Assets\Obi\Scripts\InspectorButtonAttribute.cs" />
+     <Compile Include="Assets\Obi\Scripts\Oni.cs" />
+     <Compile Include="Assets\Obi\Scripts\Solver\IObiSolverClient.cs" />
+     <Compile Include="Assets\Obi\Scripts\Solver\ObiAnimatorController.cs" />
+     <Compile Include="Assets\Obi\Scripts\Solver\ObiArbiter.cs" />
+     <Compile Include="Assets\Obi\Scripts\Solver\ObiSolver.cs" />
+     <Compile Include="Assets\Obi\Scripts\Solver\ObiSolverData.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\Forces\ObiAmbientForceZone.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\Forces\ObiExternalForce.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\Forces\ObiSphericalForceZone.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiFluidSplatter.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiFoamGenerator.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiParticleBaker.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiParticleGridDebugger.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiParticleHandle.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiProfiler.cs" />
+     <Compile Include="Assets\Obi\Scripts\Utils\ObiUtils.cs" />
+     <Compile Include="Assets\ReflectionDemo\Reflection.cs" />
+     <Compile Include="Assets\ShaderToy\ShaderToy.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TrackedController.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\BodyCollider.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\CircularDrive.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ComplexThrowable.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ControllerHoverHighlight.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\CustomEvents.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DebugUI.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnDetachedFromHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnParticleSystemDeath.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnTriggerEnter.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DistanceHaptics.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\EnumFlags.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\FallbackCameraController.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Hand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HideOnHandFocusLost.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\IgnoreHovering.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\InputModule.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Interactable.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\InteractableButtonEvents.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\InteractableHoverEvents.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackage.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackageSpawner.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearAnimation.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearAnimator.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearAudioPitch.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearBlendshape.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearDisplacement.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearDrive.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Player.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SleepOnAwake.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SoundDeparent.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SoundPlayOneshot.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachAfterControllerIsTracking.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachToHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SpawnRenderModel.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\UIElement.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Util.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowheadRotation.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Balloon.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonColliders.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonHapticBump.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonSpawner.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ExplosionWobble.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\FireSource.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Longbow.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\SoundBowClick.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\ControllerHintsExample.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\InteractableExample.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\AllowTeleportWhileAttachedToHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\IgnoreTeleportTrace.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArc.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArea.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportMarkerBase.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
+     <Compile Include="Assets\SteamVR\Plugins\openvr_api.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Camera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraMask.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Controller.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_ControllerManager.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Ears.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Events.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_ExternalCamera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Fade.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Frustum.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_GameView.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_IK.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_LoadLevel.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Menu.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Overlay.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_PlayArea.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Render.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RenderModel.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Skybox.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_SphericalProjection.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Stats.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TestController.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedCamera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\Testure3D获取Texture2D\CreatTexture3D.cs" />
+     <Compile Include="Assets\TipPos\TipPos.cs" />
+     <Compile Include="Assets\ViveVR\SteamVr_UI_Button.cs" />
+     <Compile Include="Assets\ViveVR\SteamVr_UI_Toggle.cs" />
+     <Compile Include="Assets\ViveVR\vrtest.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\HowToMakeATexture3DAsset.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\OverlayExample.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ProceduralExample.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\Crosshairs.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\IntersectionSlicer.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\MouseOverHandle.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\Picker1D.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\Picker2D.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\ProgressBar.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\RotationPlane.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\SimpleWindow.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\SliderRange.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\SliderSnap.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\TransferFunctionPainter.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\ui\VolumeHistImage.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\utilities\OpenSimplexNoise.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\utilities\RedGizmo.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\utilities\RotateObj.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\utilities\SinMoveObj.cs" />
+     <Compile Include="Assets\VolumeViewerPro\examples\scripts\utilities\VolumeHelper.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\camera\VolumeIntersectionRenderer.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\camera\VolumeRenderer.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\files\DCM2Volume.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\files\NII2Volume.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\files\PNG2Volume.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\files\VolumeFileLoader.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\utilities\VolumeUtilities.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\volume\VolumeComponent.cs" />
+     <Compile Include="Assets\VolumeViewerPro\scripts\volume\VolumeComponentAsset.cs" />
+     <Compile Include="Assets\test.cs" />
+     <Compile Include="Assets\交界线\BorderLine.cs" />
+     <Compile Include="Assets\体数据X光\T3DX.cs" />
+     <Compile Include="Assets\体数据生成模型接入\KISETest.cs" />
+     <Compile Include="Assets\体数据生成模型接入\SpineDivTest.cs" />
+     <Compile Include="Assets\体数据生成模型接入\scripts\KISExportService.cs" />
+     <Compile Include="Assets\体数据生成模型接入\scripts\KISResult.cs" />
+     <Compile Include="Assets\体数据生成模型接入\scripts\KISResultListStr.cs" />
+     <Compile Include="Assets\体数据生成模型接入\scripts\KISResultMatrix.cs" />
+     <Compile Include="Assets\体数据生成模型接入\scripts\KISResultStr.cs" />
+     <Compile Include="Assets\八边形八点拖拽\EightBoxController.cs" />
+     <Compile Include="Assets\八边形八点拖拽\F1Test.cs" />
+     <Compile Include="Assets\八边形八点拖拽\PointDrag.cs" />
+     <Compile Include="Assets\动态规划\DynamicPlanning.cs" />
+     <Compile Include="Assets\大模型导入\ImportBigModel.cs" />
+     <Compile Include="Assets\大模型导入\ReadLine.cs" />
+     <Compile Include="Assets\大模型导入\ReadLineNew.cs" />
+     <Compile Include="Assets\屏幕效果\CommandBufferTest.cs" />
+     <Compile Include="Assets\屏幕效果\EffectTest.cs" />
+     <Compile Include="Assets\平移旋转缩放矩阵\TRS.cs" />
+     <Compile Include="Assets\摄像机内参\CameraProjectMat.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\ImportObj.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\Demo\Examples.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\Demo\SimpleObjDemo.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\MeshExtensions.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\ObjImporter.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\OrbCreationExtensions\CollectionExtensions.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\OrbCreationExtensions\FloatExtensions.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\OrbCreationExtensions\IntExtensions.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\OrbCreationExtensions\StringExtensions.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\SimpleObj\Texture2DExtensions.cs" />
+     <Compile Include="Assets\模型分割与大模型导入\TestM.cs" />
+     <Compile Include="Assets\次表面学习\SSS.cs" />
+     <Compile Include="Assets\渲染顺序测试\Queue.cs" />
+     <Compile Include="Assets\相对旋转\RelativeAngle.cs" />
+     <Compile Include="Assets\相对矩阵\relativematrix.cs" />
+     <Compile Include="Assets\种子点生长区段法\SpanFill2D.cs" />
+     <Compile Include="Assets\绕轴跟随鼠标旋转\RotaScript.cs" />
+     <Compile Include="Assets\高斯噪声\GaussNoiseTest.cs" />
+     <Compile Include="Assets\高斯模糊\Gaussian.cs" />
+     <Compile Include="Assets\鼠标下有哪些UI\MouseOverUI.cs" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsOpaque.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.compute" />
+     <None Include="Assets\ReflectionDemo\Reflection.shader" />
+     <None Include="Assets\ViveVR\ZTest\ZTest.shader" />
+     <None Include="Assets\Obi\Plugins\libOni.bundle\Contents\Resources\CMakeLists.txt" />
+     <None Include="Assets\3DBrush\VolumeSliceShader.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
+     <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader-Lighting.cginc" />
+     <None Include="Assets\ShaderToy\Sphere.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Additive.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\OpenCLShader.cl.txt" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectPreComposite.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectMetal.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Multiply.shader" />
+     <None Include="Assets\Shader\MyShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorParticle.shader" />
+     <None Include="Assets\VolumeViewerPro\shaders\CullingDepthFront.shader" />
+     <None Include="Assets\TipPos\CamPos.txt" />
+     <None Include="Assets\交界线\CylinderShader 1.shader" />
+     <None Include="Assets\ShaderToy\Test.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
+     <None Include="Assets\ModelSection\PunctureTextureShader.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.compute" />
+     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+     <None Include="Assets\Testure3D获取Texture2D\Texture3D.shader" />
+     <None Include="Assets\交界线\QuadShader.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceMetal.shader" />
+     <None Include="Assets\VolumeViewerPro\shaders\RayIntersect.shader" />
+     <None Include="Assets\Shader\MyShader1.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceDepth.shader" />
+     <None Include="Assets\Obi\Editor\Resources\FlatSurfaceShader.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsBlend.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-VertexLitBlended.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectSpecular.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ParticleShader.shader" />
+     <None Include="Assets\ModelSection\NeuroTumorSectionFront.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.cginc" />
+     <None Include="Assets\ShaderToy\Umbrella.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Includes\FluvioCompute.cginc" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\DielectricFluidShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorLineShader.shader" />
+     <None Include="Assets\模型分割与大模型导入\SimpleObj\Demo\Shaders\TextShaderZ.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.cginc" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.cginc" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-AlphaBlended.shader" />
+     <None Include="Assets\TipPos\PlaneFor.txt" />
+     <None Include="Assets\ModelSection\NeuroTumorSection.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\StandardBackfaces.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ObiParticles.cginc" />
+     <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+     <None Include="Assets\UIMaskShader\MaskShader.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\OpenCLShader.cl.txt" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceSpecular.shader" />
+     <None Include="Assets\次表面学习\OpaqueBlendAlpha.shader" />
+     <None Include="Assets\VolumeViewerPro\shaders\OpaqueDepth.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\OpaqueFluidShader.shader" />
+     <None Include="Assets\MeshErasure\MeshCulling.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectComposite.shader" />
+     <None Include="Assets\模型分割与大模型导入\SimpleObj\ReadMe.txt" />
+     <None Include="Assets\TipPos\PlanePos.txt" />
+     <None Include="Assets\TipPos\NdiMatOri.txt" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectBlur.shader" />
+     <None Include="Assets\交界线\BackDepthShader.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader-Mobile.cginc" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\NormalReconstruction.shader" />
+     <None Include="Assets\MaterialSetBuffer\materialSetBuffer.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\FluidEffectShadow.cginc" />
+     <None Include="Assets\模型剔除shader\CylineShader.shader" />
+     <None Include="Assets\Testure3D获取Texture2D\PlaneShader.shader" />
+     <None Include="Assets\TipPos\PointPosOri.txt" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Includes\FluvioLanguageSupport.cginc" />
+     <None Include="Assets\ShaderToy\DashedLine.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\OpenCLShader.cl.txt" />
+     <None Include="Assets\VolumeViewerPro\shaders\BlendVolume.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\SimpleParticleShader.shader" />
+     <None Include="Assets\TipPos\PointPosOriReal.txt" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.cginc" />
+     <None Include="Assets\交界线\FrontDepthShader.shader" />
+     <None Include="Assets\水面\water.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.compute" />
+     <None Include="Assets\VolumeViewerPro\shaders\RayCast.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidShader.shader" />
+     <None Include="Assets\高斯模糊\Gaussian.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\OpenCLShader.cl.txt" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\OpenCLShader.cl.txt" />
+     <None Include="Assets\体数据X光\SlicerTexture.shader" />
+     <None Include="Assets\Fluvio\Shaders\FluidEffect\FluidEffect.cginc" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.compute" />
+     <None Include="Assets\Obi\Editor\Resources\TopologyBorders.shader" />
+     <None Include="Assets\模型分割与大模型导入\SimpleObj\Demo\Shaders\UnlitNoFog.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\OpenCLShader.cl.txt" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidThickness.shader" />
+     <None Include="Assets\Shader\OpacityCullingForMobie.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\LitParticles.shader" />
+     <None Include="Assets\VolumeViewerPro\shaders\VolumePlaceholder.shader" />
+     <None Include="Assets\屏幕效果\EffectTest.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.cginc" />
+     <None Include="Assets\3DBrush\ComputeShader3D.compute" />
+     <None Include="Assets\字体材质\3DTextShader.shader" />
+     <None Include="Assets\ShaderToy\Heart.shader" />
+     <None Include="Assets\UIMaskShader\UI.shader" />
+     <None Include="Assets\TipPos\TipLocalPos.txt" />
+     <None Include="Assets\VolumeViewerPro\shaders\CullingDepthBack.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Additive.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
+     <None Include="Assets\ShaderToy\SinCurved.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AdditiveLit.shader" />
+     <None Include="Assets\渲染顺序测试\A.shader" />
+     <None Include="Assets\ShaderToy\SpotLight.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\OpenCLShader.cl.txt" />
+     <None Include="Assets\3DBrush\Image2DShader.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.compute" />
+     <None Include="Assets\Obi\Editor\Resources\EditorParticleRadius.shader" />
+     <None Include="Assets\次表面学习\depthShader.shader" />
+     <None Include="Assets\ModelSection\SpineNailShader.shader" />
+     <None Include="Assets\3DBrush\ComputeShader 1.compute" />
+     <None Include="Assets\Obi\Editor\Resources\PropertyGradientMaterial.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-VertexLitBlended.shader" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.cginc" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+     <None Include="Assets\Fluvio\_Main\Fluvio.Runtime.xml" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+     <None Include="Assets\大模型导入\DtiShader.shader" />
+     <None Include="Assets\交界线\CylinderShader.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader.cginc" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-AdditiveLit.shader" />
+     <None Include="Assets\Fluvio\README.txt" />
+     <None Include="Assets\MeshErasure\FrontDepth.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ScreenSpaceCurvatureFlow.shader" />
+     <None Include="Assets\MeshErasure\backDepth.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardSimpleBackfaces.cginc" />
+     <None Include="Assets\模型剔除shader\SingleDiffuseShader.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AlphaBlended.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\FluidShaderFlat.shader" />
+     <None Include="Assets\SteamVR\readme.txt" />
+     <None Include="Assets\VolumeViewerPro\shaders\CullingPlaceholder.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-AlphaBlended.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreBackfaces.cginc" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardBackfaces.cginc" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+     <None Include="Assets\次表面学习\SSS.shader" />
+     <None Include="Assets\模型分割与大模型导入\SimpleObj\Documentation.txt" />
+     <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.compute" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-Multiply.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Multiply.shader" />
+     <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-Additive.shader" />
+     <None Include="Assets\交界线\ImageEffectShader.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Cloo">
+ <HintPath>C:/Users/Administrator/Desktop/ProjectTest/Assets/Fluvio/_Main/Cloo.dll</HintPath>
+ </Reference>
+ <Reference Include="Fluvio.Runtime">
+ <HintPath>C:/Users/Administrator/Desktop/ProjectTest/Assets/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Thrift">
+ <HintPath>C:/Users/Administrator/Desktop/ProjectTest/Assets/Plugins/Thrift.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

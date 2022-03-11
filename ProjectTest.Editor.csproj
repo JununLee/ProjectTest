@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11E05FFE-6990-22E3-8E58-582EAFFD5299}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>5.6.6f2</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_6;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_6;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Unity5.6/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Unity5.6/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>C:/Unity5.6/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Unity5.6/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Unity5.6/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluvio.Editor">
+      <HintPath>Assets/Fluvio/Editor/Fluvio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>Assets/Fluvio/Editor/Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Cloo">
+      <HintPath>Assets/Fluvio/_Main/Cloo.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluvio.Runtime">
+      <HintPath>Assets/Fluvio/_Main/Fluvio.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Thrift">
+      <HintPath>Assets/Plugins/Thrift.dll</HintPath>
+    </Reference>
+    <Reference Include="cscharls">
+      <HintPath>Assets/Plugins/fodicom/cscharls.dll</HintPath>
+    </Reference>
+    <Reference Include="gdcm-sharp">
+      <HintPath>Assets/Plugins/gdcm/gdcm-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ProjectTest.csproj">
+      <Project>{C64ABFE5-C832-E704-FD8C-85FCCA3B366B}</Project>
+      <Name>ProjectTest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Obi\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiAboutWindow.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiAerodynamicConstraintsEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiBendingConstraintsEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiBoneEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiClothParticleHandles.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiColliderEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiDistanceConstraintsEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiDraggableIcon.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiEditorUtils.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiEmitterEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiEmitterMaterialEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiEmitterShapeEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiParticleActorEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiParticleBakerEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiParticleCacheEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiParticleHandleEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiParticleRendererEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiPinConstraintsEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiSolverEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiSplineHandles.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiStitcherEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiTetherConstraintsEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\ObiVolumeConstraintsEditor.cs" />
+    <Compile Include="Assets\Obi\Editor\PreviewHelpers.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Editor\OpenCVForUnityIOSBuildPostprocessor.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Editor\OpenCVForUnityMenuItem.cs" />
+    <Compile Include="Assets\VolumeViewerPro\scripts\camera\editor\VolumeRendererEditor.cs" />
+    <Compile Include="Assets\VolumeViewerPro\scripts\files\editor\VolumeFileLoaderEditor.cs" />
+    <Compile Include="Assets\VolumeViewerPro\scripts\volume\editor\VolumeComponentEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\3DBrush\ComputeShader 1.compute" />
+    <None Include="Assets\3DBrush\ComputeShader3D.compute" />
+    <None Include="Assets\3DBrush\Image2DShader.shader" />
+    <None Include="Assets\3DBrush\VolumeSliceShader.shader" />
+    <None Include="Assets\Fluvio\README.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\FluidParticleSystem\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Includes\FluvioCompute.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Includes\FluvioLanguageSupport.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\ColorByDensity\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\FluidEffector\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Plugins\SizeByDensity\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidMixer\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\SamplePlugins\FluidTouch\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.cginc" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\ComputeShader.compute" />
+    <None Include="Assets\Fluvio\Resources\ComputeShaders\Solvers\SPHSimulationSolver\OpenCLShader.cl.txt" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\FluidEffect.cginc" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\FluidEffectShadow.cginc" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectMetal.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Fluvio-FluidEffectSpecular.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectBlur.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectComposite.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectPreComposite.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceDepth.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceMetal.shader" />
+    <None Include="Assets\Fluvio\Shaders\FluidEffect\Hidden-FluidEffectReplaceSpecular.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader-Lighting.cginc" />
+    <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader-Mobile.cginc" />
+    <None Include="Assets\Fluvio\Shaders\Particles\FluidParticleShader.cginc" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Additive.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-AlphaBlended.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Mobile-Particles-Multiply.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-Additive.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-AdditiveLit.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-AlphaBlended.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-Multiply.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Additive.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AdditiveLit.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-AlphaBlended.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-Multiply.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-NoGrabPass-VertexLitBlended.shader" />
+    <None Include="Assets\Fluvio\Shaders\Particles\Fluvio-Particles-VertexLitBlended.shader" />
+    <None Include="Assets\Fluvio\_Main\Fluvio.Runtime.xml" />
+    <None Include="Assets\LM\1.txt" />
+    <None Include="Assets\MaterialSetBuffer\materialSetBuffer.shader" />
+    <None Include="Assets\MeshErasure\FrontDepth.shader" />
+    <None Include="Assets\MeshErasure\MeshCulling.shader" />
+    <None Include="Assets\MeshErasure\backDepth.shader" />
+    <None Include="Assets\ModelSection\NeuroTumorSection.shader" />
+    <None Include="Assets\ModelSection\NeuroTumorSectionFront.shader" />
+    <None Include="Assets\ModelSection\PunctureTextureShader.shader" />
+    <None Include="Assets\ModelSection\SpineNailShader.shader" />
+    <None Include="Assets\Obi\Editor\Resources\EditorLineShader.shader" />
+    <None Include="Assets\Obi\Editor\Resources\EditorParticle.shader" />
+    <None Include="Assets\Obi\Editor\Resources\EditorParticleRadius.shader" />
+    <None Include="Assets\Obi\Editor\Resources\FlatSurfaceShader.shader" />
+    <None Include="Assets\Obi\Editor\Resources\PropertyGradientMaterial.shader" />
+    <None Include="Assets\Obi\Editor\Resources\TopologyBorders.shader" />
+    <None Include="Assets\Obi\Plugins\libOni.bundle\Contents\Resources\CMakeLists.txt" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\DielectricFluidShader.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsBlend.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsOpaque.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\FluidShader.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\FluidShaderFlat.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\FluidThickness.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\LitParticles.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\NormalReconstruction.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\ObiParticles.cginc" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\OpaqueFluidShader.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\ParticleShader.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\ScreenSpaceCurvatureFlow.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\SimpleParticleShader.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\StandardBackfaces.shader" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreBackfaces.cginc" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardBackfaces.cginc" />
+    <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardSimpleBackfaces.cginc" />
+    <None Include="Assets\OpenCVForUnity\Notices.txt" />
+    <None Include="Assets\OpenCVForUnity\OpenCVLicense.txt" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\haarcascade_frontalface_alt.xml" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\lbpcascade_frontalface.xml" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\OCRHMM_transitions_table.xml" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\trained_classifierNM1.xml" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\trained_classifierNM2.xml" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\trained_classifier_erGrouping.xml" />
+    <None Include="Assets\ReadAndWriteXML\myXML.xml" />
+    <None Include="Assets\ReflectionDemo\Reflection.shader" />
+    <None Include="Assets\Shader\MyShader.shader" />
+    <None Include="Assets\Shader\MyShader1.shader" />
+    <None Include="Assets\Shader\OpacityCullingForMobie.shader" />
+    <None Include="Assets\ShaderToy\DashedLine.shader" />
+    <None Include="Assets\ShaderToy\Heart.shader" />
+    <None Include="Assets\ShaderToy\SinCurved.shader" />
+    <None Include="Assets\ShaderToy\Sphere.shader" />
+    <None Include="Assets\ShaderToy\SpotLight.shader" />
+    <None Include="Assets\ShaderToy\Test.shader" />
+    <None Include="Assets\ShaderToy\Umbrella.shader" />
+    <None Include="Assets\Testure3D获取Texture2D\PlaneShader.shader" />
+    <None Include="Assets\Testure3D获取Texture2D\Texture3D.shader" />
+    <None Include="Assets\TipPos\CamPos.txt" />
+    <None Include="Assets\TipPos\NdiMatOri.txt" />
+    <None Include="Assets\TipPos\PlaneFor.txt" />
+    <None Include="Assets\TipPos\PlanePos.txt" />
+    <None Include="Assets\TipPos\PointPosOri.txt" />
+    <None Include="Assets\TipPos\PointPosOriReal.txt" />
+    <None Include="Assets\TipPos\TipLocalPos.txt" />
+    <None Include="Assets\UIMaskShader\MaskShader.shader" />
+    <None Include="Assets\UIMaskShader\UI.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\BlendVolume.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\CullingDepthBack.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\CullingDepthFront.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\CullingPlaceholder.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\OpaqueDepth.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\RayCast.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\RayIntersect.shader" />
+    <None Include="Assets\VolumeViewerPro\shaders\VolumePlaceholder.shader" />
+    <None Include="Assets\交界线\BackDepthShader.shader" />
+    <None Include="Assets\交界线\CylinderShader 1.shader" />
+    <None Include="Assets\交界线\CylinderShader.shader" />
+    <None Include="Assets\交界线\FrontDepthShader.shader" />
+    <None Include="Assets\交界线\ImageEffectShader.shader" />
+    <None Include="Assets\交界线\QuadShader.shader" />
+    <None Include="Assets\体数据X光\SlicerTexture.shader" />
+    <None Include="Assets\前面后面切面三种颜色区分\ColorMask.shader" />
+    <None Include="Assets\前面后面切面三种颜色区分\ThreeColor.shader" />
+    <None Include="Assets\大模型导入\DtiShader.shader" />
+    <None Include="Assets\字体材质\3DTextShader.shader" />
+    <None Include="Assets\屏幕效果\EffectTest.shader" />
+    <None Include="Assets\平行束反投影重建\X_rayProjector.shader" />
+    <None Include="Assets\模型分割与大模型导入\SimpleObj\Demo\Shaders\TextShaderZ.shader" />
+    <None Include="Assets\模型分割与大模型导入\SimpleObj\Demo\Shaders\UnlitNoFog.shader" />
+    <None Include="Assets\模型分割与大模型导入\SimpleObj\Documentation.txt" />
+    <None Include="Assets\模型分割与大模型导入\SimpleObj\ReadMe.txt" />
+    <None Include="Assets\模型剔除shader\CylineShader.shader" />
+    <None Include="Assets\模型剔除shader\SingleDiffuseShader.shader" />
+    <None Include="Assets\次表面学习\OpaqueBlendAlpha.shader" />
+    <None Include="Assets\次表面学习\SSS.shader" />
+    <None Include="Assets\次表面学习\depthShader.shader" />
+    <None Include="Assets\水面\water.shader" />
+    <None Include="Assets\渲染顺序测试\A.shader" />
+    <None Include="Assets\锥形束反投影重建\ConebeamProjector.shader" />
+    <None Include="Assets\高斯模糊\Gaussian.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

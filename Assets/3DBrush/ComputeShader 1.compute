@@ -1,0 +1,91 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+
+sampler3D _Volume;
+vector v_row0;
+vector v_row1;
+vector v_row2;
+vector v_row3;
+vector p_row0;
+vector p_row1;
+vector p_row2;
+vector p_row3;
+
+vector _scale;
+
+int _length;
+float _x[1000];
+float _y[1000];
+float _z[1000];
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float4x4 _pLocalToWorld =
+    {
+        p_row0,
+        p_row1,
+        p_row2,
+        p_row3
+    };
+
+    float4x4 _cubeWorld2Local_volume =
+    {
+        v_row0,
+        v_row1,
+        v_row2,
+        v_row3
+    };
+    float4 worldPos = float4(float3(-0.5 + id.x / 512.f, -0.5 + id.y / 512.f, 0), 1);
+    worldPos = mul(_pLocalToWorld, worldPos);
+    float4 pos = mul(_cubeWorld2Local_volume, worldPos);
+
+    pos = pos + 0.5;
+
+    float4 data = float4(0, 0, 0, 0);
+    
+    if (pos.x > 1 || pos.x < 0 || pos.y > 1 || pos.y < 0 || pos.z > 1 || pos.z < 0)
+    {
+        data = float4(0, 0, 0, 0);
+    }
+    else
+    {
+        data = tex3Dlod(_Volume, float4(pos.x, pos.y, pos.z, 0));
+        //float4 temp = tex3Dlod(_Volume, float4(_scale.x, _scale.y, _scale.z, 0));
+        //if (pos.x > (_scale.x - 0.05) && pos.x < (_scale.x + 0.05) && pos.y > (_scale.y - 0.05) && pos.y < (_scale.y + 0.05) && pos.z > (_scale.z - 0.05) && pos.z < (_scale.z + 0.05))
+        //{
+        //    if (abs(data.r - temp.r) < 0.05)
+        //    {
+        //        data.g = 1;
+        //    }
+        //}
+
+        //for (int i = 0; i < _length; i++)
+        //{
+        //    if (abs(pos.x - _x[i]) < 0.001 && abs(pos.y - _y[i]) < 0.001 && abs(pos.z - _z[i]) < 0.001)
+        //    {
+        //        data.g = 1;
+        //    }
+
+        //}
+
+    }
+    if (data.g <= 0)
+    {
+        //data.gb = data.rr;
+        Result[id.xy] = float4(data.rrr, 1);
+    }
+    else 
+    {
+        data.gb = data.r / 2;
+        data.r *= 2;
+        //data.rgb = float3(1, 0, 0);
+        Result[id.xy] = data;
+        //float4(1, 0, 0, 1);
+    }
+
+}
